@@ -6,7 +6,8 @@ A CRM app powered by Django (v4.2.8)
 
 ## To-do list:
 
-- Utilize `python-dotenv` package to store environment variables
+- Optimize Dockerfile
+- Utilize `python-dotenv` package to store environment variables ✅
 - Make a Dockerfile ✅
 - Add edit and delete buttons, instead of ID to edit a record ✅
 - Install MySQL ✅
