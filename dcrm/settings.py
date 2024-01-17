@@ -17,24 +17,14 @@ from os.path import join, dirname
 from dotenv import load_dotenv, find_dotenv
 
 # (1)
-ENV = os.environ.get('ENV')
-
-if ENV == 'PROD':
-    env_filename = '.env.prod'
-elif ENV == 'TEST':
-    env_filename = '.env.test'
-# elif ENV == 'DEV':
-#     env_filename = '.env.dev'
-else:
-    env_filename = '.env'
-
-dotenv_path = join(dirname(__file__), env_filename)
-load_dotenv(dotenv_path)
+# env_filename = '.env'
+# dotenv_path = join(dirname(dirname(__file__)), env_filename) #  <- Only if 'env_filename' (.env) is located in the parent directory
+# load_dotenv(dotenv_path)
 
 # (2)
 # 'find_dotenv()' attempts to find '.env'. That said, having '.env' in the root directory of the project should be enough. 
 #   (For more: https://stackoverflow.com/a/62625082)
-# load_dotenv(find_dotenv())
+load_dotenv(find_dotenv())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
