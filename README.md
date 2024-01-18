@@ -96,9 +96,78 @@ There you go! Please login again, if you would like to visit the main page or mo
 
 <br>
 
+## Prerequisites
+
+Before running the app, please make sure you have following software installed in your machine:
+- [Python 3](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/)
+- [Git](https://github.com/git-guides/install-git)
+
+<br>
+
+## How to Run
+
+1. Create a virtual environment
+
+```
+python3 -m venv .venv
+```
+
+2. Navigate to this directory, then activate the virtual environment
+
+```
+source .venv/bin/activate
+```
+
+3. Install required packages
+
+```python
+pip3 install -r requirements.txt
+```
+
+4. Make a new file named `.env`, then copy `.env.example` and paste the content into it
+
+```
+cp .env.example .env
+```
+
+After that, fill `.env` with appropriate values
+
+5. Create a database (Make sure you have MySQL installed in your machine beforehand)
+
+```python
+python3 mydb.py
+```
+
+6. Apply database migration
+
+```python
+python3 manage.py migrate
+```
+
+7. Create a superuser of Django admin panel
+
+```python
+python3 manage.py createsuperuser
+```
+
+You will then by asked several questions, such as `username`, `email`, and `password` of the superuser.
+
+8. Finally, run the server!
+
+```python
+python3 manage.py runserver
+```
+
+9. Voila! Visit `http://localhost:8000` on your browser
+
+<br>
+
 ## To-do list:
 
 - Optimize Dockerfile
+- Generate `requirements.txt` ✅
 - Utilize `python-dotenv` package to store environment variables ✅
 - Make a Dockerfile ✅
 - Add edit and delete buttons, instead of ID to edit a record ✅
