@@ -4,6 +4,98 @@ A CRM app powered by Django (v4.2.8)
 
 <br>
 
+## Demo
+
+These are features/pages in the CRM app:
+
+### Register
+
+People can register through the registration page:
+
+<img src="demo/register-s.png" alt="register page" />
+
+After successfully registered, the user is automatically logged in and navigated to the main page:
+
+<img src="demo/register-AFTER-s.png" alt="prompt after successfully registering" />
+
+<hr>
+
+### Login
+
+Once an account has been created, a user can login:
+
+<img src="demo/login-s.png" alt="login page" />
+
+If login is successful, the user is directed to the main page and the following message is shown on the main page:
+
+<img src="demo/login-AFTER-s.png" alt="prompt after successfully logging in" />
+
+<hr>
+
+### Main Page
+
+Main page of the CRM app displays a table which includes specific data of records:
+
+<img src="demo/main-s.png" alt="main page" />
+
+<hr>
+
+### Add a Record
+
+A user can add a record by clicking `Add a Record` on the navbar or `Add` button under the table, on the main page:
+
+<img src="demo/main-s.png" alt="main page" />
+
+Next, fill in the inputs with proper values:
+
+<img src="demo/add-record-s.png" alt="add a record page" />
+
+Once inputs have been successful, a new record is added to the table with the following message:
+
+<img src="demo/add-record-AFTER-s.png" alt="prompt after successfully adding a record" />
+
+<hr>
+
+### Update a Record
+
+In order to update/edit an existing record, click on the pencil mark button, on the main page:
+
+<img src="demo/main-s.png" alt="main page" />
+
+Then, edit data with proper value(s):
+
+<img src="demo/update-record-s.png" alt="update a record page" />
+
+Finally, the updated record is displayed on the main page:
+
+<img src="demo/update-record-AFTER-s.png" alt="prompt after successfully updating a record" />
+
+<hr>
+
+### Delete a Record
+
+To remove a record, click on the trash bin button, on the main page:
+
+<img src="demo/main-s.png" alt="main page" />
+
+If deletion is successful, the following message is displayed:
+
+<img src="demo/delete-record-AFTER-s.png" alt="prompt after successfully deleting a record" />
+
+<hr>
+
+### Logout
+
+One can logout by clicking the `Logout` text on the navbar:
+
+<img src="demo/main-s.png" alt="main page" />
+
+There you go! Please login again, if you would like to visit the main page or modify records:
+
+<img src="demo/logout-AFTER-s.png" alt="prompt after successfully logging out" />
+
+<br>
+
 ## To-do list:
 
 - Optimize Dockerfile
