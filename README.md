@@ -179,3 +179,7 @@ python3 manage.py runserver
 ## Reference
 
 - [Django Project – Code a CRM App Tutorial by FreeCodeCamp](https://www.youtube.com/watch?v=t10QcFx7d5k)
+
+<br>
+
+![Hello !](https://api.visitorbadge.io/api/VisitorHit?user=kevinadhiguna&repo=django-crm-app&label=thanks%20for%20dropping%20in%20!&labelColor=%23000000&countColor=%23FFFFFF)
